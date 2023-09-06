@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bricolage Grotesque', sans-serif;
+
+}
+
+body main{
+    padding-left: 20%;
+    padding-right: 20%;
+    margin: 0 auto;
+    padding-top: 150px;
+    background-color: black;
+    color: white;
+}
+
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    padding-left: 20%;
+    padding-right: 20%;
+    align-items: center;
+    border-bottom: 3px solid #60ED37 ;
+    border-bottom-right-radius: 80px;
+}
+
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 15px;
+    font-size: 1.4rem;
+    padding : 10px;
+}
+
+header nav ul li a:hover{
+    color:#60ED37;
+    border-bottom: 4px solid #60ED37;
+    padding-bottom: 5px;
+}
+
+header div h1{
+    color: white;
+}
+header div h1 span{
+    color: #60ED37;
+}
+
+header nav div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body header nav ul div img:last-child{
+    margin-left: 8px;
+}
+
+
+body main #inicio{
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+#inicio > div {
+    flex: 1;
+    margin: 20px;
+}
+
+#inicio > div:first-child {
+    margin-right: 20px; 
+}
+
+.imagenmia{
+    display: flex;
+    justify-content: center;
+}
+
+#inicio img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border: 1px solid transparent;
+    border-radius: 800px;
+}
+
+#inicio h2{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#inicio h2 span{
+    color: #60ED37;
+    rotate: 10s;
+}
+
+#inicio h3{
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+}
+
+#inicio h3 span{
+    color: #60ED37;
+}
+
+#inicio p{
+    font-size: 1.4rem;
+}
+
+#proyectos h2{
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+#proyectos div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerproyectos{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.containerproyectos h3{
+    font-size: 1.6rem;
+}
+
+.containerproyectos p{
+    font-size: 1.2rem;
+}
+
+.proyectosdentro2, .proyectosdentro1, .proyectosdentro3{
+    flex-direction: column;
+}
+
+.proyectosdentro2 img{
+    margin-bottom: 93px;
+}
+
+
+#habilidades{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+#habilidades div ul{
+    list-style: none;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 2fr 2fr 1fr;
+}
+
+#habilidades div ul li{
+    margin: 20px 0;
+}
+
+#habilidades h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#habilidades h3{
+    font-size: 1.8rem;
+   
+}
+
+#habilidades p {
+    font-size: 1.4rem;
+}
+
+#habilidades div{
+    margin-bottom: 30px;
+}
+
+#contacto {
+    height: 140px;
+    padding: 20px;
+    border-top: 2px solid #60ED37;  
+    border-right: 2px solid #60ED37;  
+    border-left: 2px solid #60ED37; 
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px; 
+}
+
+#contacto h2{
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+#contacto div ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+    list-style: none;
+    align-items: center;
+}
+
+
+#contacto div ul li button{
+    background-color: #60ED37;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+#contacto div ul li button:hover{
+    background-color: black;
+    border: #60ED37 2px solid;
+    color: #60ED37;
+}
+
+#contacto div ul li button a:hover{
+    color: #60ED37;
+}
+
+#contacto div ul li button a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+
+
+/* Clases */
+
+
+.container input{
+    margin-bottom: 10px;
+}
+
+.check{
+    position: relative;
+    width: 50px;
+}
+
+.check::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background-color: #333;
+    border-radius: 25px;
+}
+
+.check::after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+
+.check:checked::after{
+    left: 25px;
+    border: 2px solid #00a1ff;
+}
+
+.check:checked::before{
+    background-color: #00a1ff;
+}
