@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,10 @@
 <body>
     <header>
         <div>
-            <img src="img/logoFas.png" alt="">
+            <picture>
+                <source media="(max-width: 1000px)" srcset="img/logoFas2.png">
+                <img src="img/logoFas.png" alt="Logo FAS">
+            </picture>
         </div>
         <nav>
             <ul>
@@ -24,10 +27,10 @@
                 <li><a href="#contacto">Contacto</a></li>
 
                 <div class="container ">
-                    <img src="img/banderaespañol.png" alt="">
+                    <img src="img/banderaespañol.png" alt="Bandera de España">
                     <input type="checkbox" id="check"class="check">
                     <label for="check" class="button"></label>
-                    <img  src="img/banderaingles.png" alt="">
+                    <img  src="img/banderaingles.png" alt="Bandera del Reino Unido">
                 </div>
             </ul>
 
@@ -38,7 +41,7 @@
     <main>
         <section id="inicio">
             <div class="imagenmia">
-                <img src="img/Facu.png" alt="" width="500px">
+                <img src="img/FacundoAvalos.png" alt="Imagen de Facundo Avalos">
             </div>
             <div>
                 <h2>Facundo <span> Avalos </span></h2>
@@ -55,8 +58,6 @@
         </section>
 
 
-
-
         <section id="proyectos">
             <h2>Proyectos</h2>
                 <div>
@@ -64,7 +65,14 @@
                     <div class="containerproyectos">
                         <h3>Calculadora</h3>
                         <div class="proyectosdentro1">
-                            <img src="img/calculadoraproyecto.png" width="400px" alt="">
+                            <picture class="imgmostrar"> 
+                                <a href="https://teal-liger-29bc4b.netlify.app/" target="_blank">
+                                <source media="(max-width: 600px)" srcset="img/calculadoraproyecto.png">
+                                <source media="(max-width: 900px)" srcset="img/calculadoraproyecto2.png">
+                                <source media="(max-width: 1250px)" srcset="img/calculadoraproyecto3.png">
+                                <img src="img/calculadoraproyecto4.png" alt="Calculadora de mi proyecto">
+                                </a>
+                            </picture>
                             <p>Calculadora creada con HTML, CSS y Javascript</p>
                         </div>
                     </div>
@@ -72,29 +80,29 @@
                     <div class="containerproyectos">
                         <h3>E-commerce</h3>
                         <div class="proyectosdentro2">
-                            <img src="img/ecommerceimg.png" width="500px" alt="">
+                            <picture class="imgmostrar"><a href="https://seccomercetiendaleon.netlify.app/" target="_blank">
+                                <source media="(max-width: 700px)" srcset="img/ecommerceimg2.png">
+                                <source media="(max-width: 1250px)" srcset="img/ecommerceimg1.png">
+                                <img src="img/ecommerceimg.png" alt="">
+                            </a>
+                            </picture>
                             <p>Tienda online creada con Javascript, CSS, y HTML</p>
                         </div>
                     </div>
 
                 </div>
-                <div>
+                <div class="divDeMomento">
 
                     <div class="containerproyectos">
                         <h3>Diseño de logo</h3>
                         <div class="proyectosdentro3">
-                            <img src="img/Logofotos.png" width="500px" alt="">    
+                            <picture>
+                                <source media="(max-width: 700px)" srcset="img/Logofotos2.png">
+                                <img src="img/Logofotos.png" alt="Logo FAS">   
+                            </picture> 
                             <p>Logo creado con Adobe illustrator</p>
                         </div>
                     </div>
-                    
-                    <!-- <div class="containerproyectos">
-                        <h3>Pagina Boostrap del banco </h3>
-                        <div class="proyectosdentro3">
-                            <img src="" alt="">
-                            <p>Pagina creada con Boostrap, HTML y Javascript</p>
-                        </div>
-                    </div>   -->
                 </div>
         </section>
 
@@ -103,15 +111,60 @@
                 <h2>Habilidades</h2>
                 <div>
                         <ul>
-                            <li><img src="img/html.png"  alt="Logo HTML"></li>
-                            <li><img src="img/css.png"  alt="Logo CSS"></li>
-                            <li><img src="img/javascript.png" alt="Logo Javascript"></li>
-                            <li><img src="img/boostrap.png" alt="Logo Boostrap"></li>
-                            <li><img src="img/phothoshop.png"alt="Logo phothoshop"></li>
-                            <li><img src="img/illustrator.png" alt="Logo illustrator"></li>
-                            <li><img src="img/Vue.js_Logo_2.svg.png" width="100px" alt="Logo illustrator"></li>
-                            <li><img src="img/Wordpress_Blue_logo.png" width="100px" alt="Logo illustrator"></li>
-                            <li><img src="img/xampplogo.png" width="100px" alt="Logo illustrator"></li>
+                            <li>
+                                <picture>
+                                    <source media="(max-width: 1250px)" srcset="img/html2.png" >
+                                    <img src="img/html.png"  alt="Logo HTML">
+                                </picture>
+                            </li>
+                            <li>
+                                <picture>
+                                    <source media="(max-width: 1250px)" srcset="img/css2.png">
+                                    <img src="img/css.png"  alt="Logo CSS">
+                                </picture>
+                            </li>
+                            <li>
+                                <picture>
+                                    <source media="(max-width: 1250px)" srcset="img/javascript2.png">
+                                    <img src="img/javascript.png" alt="Logo Javascript">
+                                </picture>
+                            </li>
+                            <li>
+                                <picture>
+                                    <source media="(max-width: 1250px)" srcset="img/boostrap2.png">
+                                    <img src="img/boostrap.png" alt="Logo Boostrap">
+                                </picture>
+                            </li>
+                            <li>
+                                <picture>
+                                    <source media="(max-width: 1250px)" srcset="img/phothoshop2.png">
+                                    <img src="img/phothoshop.png"alt="Logo phothoshop">
+                                </picture>
+                            </li>
+                            <li>
+                                <picture>
+                                    <source media="(max-width: 1250px)" srcset="img/illustrator2.png">
+                                    <img src="img/illustrator.png" alt="Logo illustrator">
+                                </picture>
+                            </li>
+                            <li>
+                                <picture>
+                                    <source media="(max-width: 1250px)" srcset="img/vue.js_Logo_22.png">
+                                    <img src="img/Vue.js_Logo_2.svg.png" alt="Logo Vue.js">
+                                </picture>
+                            </li>
+                            <li>
+                                <picture>
+                                    <source media="(max-width: 1250px)" srcset="img/Wordpress_Blue_logo2.png">
+                                    <img src="img/Wordpress_Blue_logo.png" alt="Logo Wordpress">
+                                </picture>
+                            </li>
+                            <li>
+                                <picture>
+                                    <source media="(max-width: 1250px)" srcset="img/xampplogo2.png">
+                                    <img src="img/xampplogo.png" alt="Logo Xampp">
+                                </picture>
+                            </li>
                         </ul>
                 </div>
             </div>
@@ -137,38 +190,48 @@
                 </div>
             </div>
         </section>
-
-        <section id="contacto">
-            <div>
-                <h2>Contacto</h2>
+        <footer>
+            <section id="contacto">
                 <div>
-                    <ul>
-                        <li>
-                            <a href="https://github.com/FacundoAvalos"><img src="img/GitHub-Mark.png" alt="Image GitHub"></a>
-                        </li>
+                    <h2>Contacto</h2>
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="https://github.com/FacundoAvalos">
+                                    <picture> 
+                                        <img src="img/GitHub-Mark.png" alt="Image mail">
+                                    </picture>
+                                </a>
+                            </li>
 
-                        <li>
-                            <a href="https://www.linkedin.com/in/facundo-avalos-skerlak-9b0428216/"><img  src="img/linkedin-icon-2048x2048-ya5g47j2.png" alt="Image linkedin"></a>
-                        </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/facundo-avalos-skerlak-9b0428216/">
+                                    <picture>
+                                        <img src="img/linkedin-icon-2048x2048-ya5g47j2.png" alt="Image mail">
+                                    </picture>
+                                </a>
+                            </li>
 
-                        <li>
-                            <a href="mailto:facundeli416@gmail.com"><img src="img/maillogo.png" alt="Image mail"></a>
-                        </li>
+                            <li>
+                                <a href="mailto:facundeli416@gmail.com">
+                                    <picture>
+                                        <img src="img/maillogo.png" alt="Image mail">
+                                    </picture>
+                                </a>
+                            </li>
 
-                        <li>
-                            <button><a download="curriculum_descarga" href="archivos/Facundo_Avalos_Skerlak-CV.pdf">Descargar curriculum</a></button>
-                        </li>
-                    </ul>
+                            <li>
+                                <button><a download="curriculum_descarga" href="archivos/Facundo_Avalos_Skerlak-CV.pdf">Descargar curriculum</a></button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </section>
-
+            </section>
+        </footer>
     </main>
 
 
-    <footer>
 
-    </footer>
 
     <script src="app.js"></script>
 </body>
